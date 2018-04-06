@@ -1,4 +1,11 @@
 /**
+ * Bruno Alejandro
+   Felipe Meireles
+   Fernando Napoli 
+   João Henrique 
+   Lucas de Mauro 
+   Robson do Nascimento 
+ * 
  * Esta classe representa um Item que pode ser adicionado à mochila.
  */
 package Objetos;

@@ -1,17 +1,25 @@
 /**
+ * Bruno Alejandro
+   Felipe Meireles
+   Fernando Napoli 
+   João Henrique 
+   Lucas de Mauro 
+   Robson do Nascimento
+ * 
+ * 
  * Classe que representa uma formiga do algoritmo de colônia de formigas.
  */
 package Objetos;
 
 import java.util.ArrayList;
 import java.util.List;
-import Interface.DadosEntrada;
+import javax.swing.JTextArea;
 
 /**
  *
  * @author João Loureiro
  */
-public class Formiga implements DadosEntrada {
+public class Formiga {
     private List<Item> itens; //Mochila da Formiga
     private double valorObtido;
     private double pesoCarregado;
@@ -68,10 +76,11 @@ public class Formiga implements DadosEntrada {
         return menorValor;
     }
 
-    @Override
-    public String toString() {
-        System.out.println(itens);
-        return "A: " + valorObtido + ", " + "P: " + pesoCarregado + ", "+ "V: " + volumeCarregado;
+    public void toString(JTextArea areaTexto) {
+        for (Item item : itens) {
+            areaTexto.append(item.toString());
+        }
+        areaTexto.append("\nA: " + valorObtido + ", " + "P: " + pesoCarregado + ", "+ "V: " + volumeCarregado + "\n");
     }
     
     
